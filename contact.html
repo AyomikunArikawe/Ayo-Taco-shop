@@ -13,13 +13,11 @@
     <main>
       <header>
         <h1>Contact Us</h1>
-        <nav>
-          <ul>
-            <li><a href="index.html">Homepage</a></li>
-            <li><a href="index.html#AboutATS">AboutATS</a></li>
-            <li><a href="index.html#Ourmenu">Ourmenu</a></li>
-            <li><a href="hours.html">store hours</a></li>
-          </ul>
+        <nav class="link">
+          <span><a href="index.html">Homepage</a></span>
+          <span><a href="index.html#AboutATS">AboutATS</a></span>
+          <span><a href="index.html#Ourmenu">Ourmenu</a></span>
+          <span><a href="hours.html">store hours</a></span>
         </nav>
         <figure>
           <img
@@ -36,7 +34,7 @@
       <form action="https://httpbin.org/get" method="get">
         <fieldset>
           <legend>Send Us a Message</legend>
-          <p>
+          <p class="form">
             <label for="Name">Name:</label>
             <input
               type="text"
@@ -46,7 +44,7 @@
               required
             />
           </p>
-          <p>
+          <p class="form">
             <label for="email">E-mail</label>
             <input
               type="email"
@@ -56,7 +54,7 @@
               placeholder="Your mail"
             />
           </p>
-          <p>
+          <p class="form">
             <label for="phone">Phone number </label>
             <input
               type="tel"
@@ -66,7 +64,7 @@
               pattern="[0-9]{3}[0-9]{3}[0-9]{5}"
             />
           </p>
-          <p>
+          <p class="form">
             <textarea
               name="message"
               id="message"
@@ -75,7 +73,7 @@
               placeholder="Leave a message here!"
             ></textarea>
           </p>
-          <p>
+          <p class="form">
             If you placed an order online please upload your receipt here:
 
             <input type="file" name="receipt" id="receipt" />
@@ -90,15 +88,18 @@
             />
           </p>
         </fieldset>
-        <p>
+        <p class="button">
           <button type="submit">reset</button>
           <button type="submit">send</button>
         </p>
+        <hr />
       </form>
     </section>
     <footer>
       <h3>Our Location</h3>
+
       <p>We are located at</p>
+
       <address>
         <em
           >10 Ajagungbade street off Cmd road ikosi ketu, <br />Lagos state.
@@ -106,9 +107,10 @@
         </em>
       </address>
       <p><strong>Phone</strong>:080-221-09872</p>
+
       <p><a href="#">Back to top</a></p>
       <hr />
-      <p>&copy;Ayo's Taco Shop</p>
     </footer>
+    <p>&copy;Ayo's Taco Shop</p>
   </body>
 </html>

@@ -1,19 +1,23 @@
-html {
-    font-size: 22px;
+h1 {
+  border: 2px #333 solid;
+  font-size: 3rem;
+  padding: 1em;
+  width: 25%;
+  background-color: #333;
+  color: azure;
+  
 }
 
-body {
-    min-height: 100vh;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 1rem;
-    border-left: 1px solid #333;
-    border-right: 1px solid #333;
+h2{
+  border: 2px #333 solid;
+  font-size: 3rem;
+  padding: 1em;
+  width: 20%;
+  background-color: #333;
+  color: azure;
 }
 
-th, td, caption {
-    border: 1px solid #333;
-    font-family: 'Courier New', Courier, monospace;
-    border-collapse: separate;
-    padding: 0.5rem;
+nav{
+  
+  border: 2px crimson solid;
 }
