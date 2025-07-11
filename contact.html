@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contact.css" />
     <meta name="author" content="Ayomikun" />
     <meta name="Taco shop" content="taco" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
@@ -13,106 +13,140 @@
     <main>
       <header>
         <nav class="nav-bar">
-          
-          <p><a href="index.html" class="links">Homepage</a></p>
-          <p><a href="index.html#AboutATS" class="links">AboutATS</a></p>
-          <p><a href="index.html#Ourmenu" class="links">Ourmenu</a></p>
-          <p><a href="hours.html" class="links">store hours</a></p>
-        </nav>
-        <div>
           <img
-            src="image/tacos_close_up_400x260.png"
-            alt="Tacos"
-            loading="eager"
-            height="450"
-            width="450"
-            class="image-1"
+            src="image/logo.jpg"
+            alt="logo"
+            height="100"
+            width="120"
+            class="logo-1"
           />
-        </div>
+          <div class="nav-link">
+            <p><a href="home.html" class="links">Home</a></p>
+            <p><a href="home.html#Ourmenu" class="links">Our menu</a></p>
+            <p><a href="home.html#AboutATS" class="links">About ATS</a></p>
+            <p><a href="promo.html" class="links">Hot deals</a></p>
+          </div>
+          <button class="button">order now</button>
+        </nav>
       </header>
     </main>
-    <section>
+    <section class="contact">
       <h2>Our contact form</h2>
-      <form action="https://httpbin.org/get" method="get">
-        <fieldset>
-          <legend>Send Us a Message</legend>
-          <p class="form">
-            <label for="Name">Name:</label>
+      <div class="container">
+        <form action="https://httpbin.org/get" method="get" class="forms">
+          <div class="form">
+            <label for="Name" class="label">Name:</label>
             <input
+              class="input-box"
               type="text"
               name="Name"
               id="Name"
               placeholder="Your Name"
               required
             />
-          </p>
-          <p class="form">
-            <label for="email">E-mail</label>
+          </div>
+          <div class="form">
+            <label for="email" class="label">E-mail:</label>
             <input
+              class="input-box"
               type="email"
               name="email"
               id="email"
               required
               placeholder="Your mail"
             />
-          </p>
-          <p class="form">
-            <label for="phone">Phone number </label>
+          </div>
+          <div class="form">
+            <label for="phone" class="label">Phone number: </label>
             <input
+              class="input-box"
               type="tel"
               name="phone"
               id="phone"
               placeholder="080-221-09872"
               pattern="[0-9]{3}[0-9]{3}[0-9]{5}"
             />
-          </p>
-          <p class="form">
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-              placeholder="Leave a message here!"
-            ></textarea>
-          </p>
-          <p class="form">
-            If you placed an order online please upload your receipt here:
+          </div>
 
-            <input type="file" name="receipt" id="receipt" />
-          </p>
-          <p>
-            <label for="checkbox">Accept our terms and descriptions</label>
+          <div class="form-1">
+            <textarea
+              class="text"
+              name="text"
+              id="text"
+              placeholder=" Leave a message !"
+            ></textarea>
+          </div>
+
+          <div class="form-2">
+            If you placed an order online, kindly upload your receipt here:
+
+            <input type="file" name="receipt" id="receipt" class="upload" />
+          </div>
+          <div class="terms">
+            <label for="checkbox" class="label"
+              >Accept our terms and descriptions</label
+            >
             <input
               type="checkbox"
               name="terms and descriptions"
               id="checkbox"
               required
             />
-          </p>
-        </fieldset>
-        <p class="button">
-          <button type="submit">reset</button>
-          <button type="submit">send</button>
-        </p>
-        <hr />
-      </form>
+          </div>
+
+          <div class="button-1">
+            <button type="submit" class="btn-submitreset">reset</button>
+            <button type="submit" class="btn-submitreset">send</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="sec-2">
+        <div class="location">
+          <h3>Our Location</h3>
+
+          <p>We are located at</p>
+
+          <address>
+            <em
+              >10 Ajagungbade street off Cmd road ikosi ketu, <br />Lagos state.
+              <br />Nigeria.
+            </em>
+          </address>
+          <p><strong>Phone</strong>:080-221-09872</p>
+        </div>
+        <div class="bottom-bar">
+          <a
+            href="https://www.instagram.com/ayomikun.nn?igsh=MXUyNGkzYXZiYmMyMQ%3D%3D&utm_source=qr  "
+            target="_blank"
+            ><ion-icon name="logo-instagram" class="social-icon"></ion-icon
+          ></a>
+          <a href="https://www.tiktok.com/en/"
+            ><ion-icon
+              name="logo-tiktok"
+              class="social-icon"
+              target="_blank"
+            ></ion-icon>
+          </a>
+          <a href="https://www.whatsapp.com/" target="_blank">
+            <ion-icon class="social-icon" name="logo-whatsapp"></ion-icon>
+          </a>
+
+          <a href="#"> <button class="btn-submitreset">Back to top</button></a>
+        </div>
+        <p class="copyright">&copy;Ayo's Taco Shop</p>
+      </div>
     </section>
-    <footer>
-      <h3>Our Location</h3>
-
-      <p>We are located at</p>
-
-      <address>
-        <em
-          >10 Ajagungbade street off Cmd road ikosi ketu, <br />Lagos state.
-          <br />Nigeria.
-        </em>
-      </address>
-      <p><strong>Phone</strong>:080-221-09872</p>
-
-      <p><a href="#">Back to top</a></p>
-      <hr />
-    </footer>
-    <p>&copy;Ayo's Taco Shop</p>
+    <!-- <footer class="copyright">
+      <p style="display: block">&copy; Ayo's Taco shop</p>
+    </footer> -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

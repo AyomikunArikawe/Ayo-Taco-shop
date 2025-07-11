@@ -4,66 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>login</title>
-    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="logresponsive.css" />
   </head>
   <body>
-    <div class="login-container">
-      <div class="form-container">
-        <form action="home.html" class="form">
-          <div class="forms">
-            <div class="head-logo">
-              <span>
-                <h1>login</h1>
-              </span>
-              <p class="img-login">
-                <img src="image/logo.jpg" alt="logo" height="85" width="90" />
-              </p>
-            </div>
-          </div>
-          <div class="forms">
-            <label for="Name" class="label">Username:</label>
-            <br />
-            <input
-              class="input-box"
-              type="text"
-              name="Name"
-              id="Name"
-              autocomplete="on"
-              placeholder="Your Name"
-              required
-            />
-          </div>
-          <div class="forms">
-            <label class="label" for="password">Password:</label>
-            <br />
-            <input
-              class="input-box"
-              type="password"
-              name="password"
-              id="password"
-              required
-              placeholder="Your password"
-            />
-          </div>
-          <div class="forms">
-            <div class="additional-stuff">
-              <p>
-                <label for="remember-me" class="remember-me">remember-me</label>
-                <input type="checkbox" name="remember-me" id="remember-me" />
-              </p>
-              <p>
-                <a class="forgot" href="#">forgot password ?</a>
-              </p>
-            </div>
-            <a href="home.html"><button class="button">sign in</button></a>
-            <br />
-            <p>
-              <span class="dont-have">Don't have an account?</span>
-              <a href="signup.html" class="sign-link">sign up</a>
+    <div class="form-container">
+      <form action="home.html" class="form">
+        <div class="forms">
+          <div class="head-logo">
+            <span>
+              <h1>login</h1>
+            </span>
+            <p class="img-login">
+              <img src="image/logo.jpg" alt="logo" height="85" width="90" />
             </p>
           </div>
-        </form>
-      </div>
+        </div>
+        <div class="forms">
+          <label for="Name" class="label">Username:</label>
+          <br />
+          <input
+            class="input-box"
+            type="text"
+            name="Name"
+            id="Name"
+            autocomplete="on"
+            placeholder="Your Name"
+            required
+          />
+        </div>
+        <div class="forms">
+          <label class="label" for="password">Password:</label>
+          <br />
+          <input
+            class="input-box"
+            type="password"
+            name="password"
+            id="password"
+            required
+            placeholder="Your password"
+          />
+        </div>
+        <div class="forms">
+          <div class="additional-stuff">
+            <p>
+              <label for="remember-me" class="remember-me">Remember-me</label>
+              <input type="checkbox" name="remember-me" id="remember-me" />
+            </p>
+            <p>
+              <a class="forgot" href="#">Forgot password ?</a>
+            </p>
+          </div>
+          <a href="home.html"><button class="button">sign in</button></a>
+          <br />
+          <p>
+            <span class="dont-have">Don't have an account?</span>
+            <a href="signup.html" class="sign-link" style="text-decoration: none;">&nbsp; Sign up</a>
+          </p>
+        </div>
+      </form>
     </div>
   </body>
 </html>

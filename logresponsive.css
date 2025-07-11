@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
- 
+  outline: none;
 }
 
 .form-container {
@@ -37,6 +37,36 @@
 }
 
 
+.remember-me{
+    cursor: text;
+}
+
+.remember-me:hover {
+  color: darkgray;
+}
+
+.sign-link {
+  color: rgb(218, 52, 218);
+  flex-wrap: wrap;
+}
+
+.sign-link:hover {
+  color: rgb(247, 127, 247);
+}
+
+.forgot {
+  text-decoration: none;
+  color: rgb(218, 52, 218);
+}
+
+.forgot:hover {
+  color: rgb(247, 127, 247);
+}
+
+.dont-have:hover {
+  color: darkgrey;
+  cursor: text;
+}
 
 button {
   color: white;
@@ -101,8 +131,24 @@ h1:hover {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  flex:  0 1 auto;
+  flex: 0 1 auto;
   height: auto;
-  width: 32rem;
+  width: auto;
 }
 
+.additional-stuff {
+  display: flex;
+
+  width: 105%;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  justify-content: space-between;
+  flex: 1;
+  flex-wrap: wrap;
+  margin: 0 1 auto;
+  margin-bottom: 2rem;
+  height: auto;
+  text-align: left;
+  margin-right: 1rem;
+  border-bottom: 1px #d4d3d3 solid;
+}
